@@ -11,27 +11,19 @@ class Capitulo {
 		visto = false;
 		calificacion=-1;
 	}
-	void visto(boolean visto) {
-		visto =  true;
-    	this.setCalificacion(calificacion);
-	}
+
 	String getTitulo() {
 		return titulo;
-	}
-	void setTitulo(String titulo) {
-		this.titulo = titulo;
 	}
 	String getDescripcion() {
 		return descripcion;
 	}
-	void setDescripcion(String descripcion) {
-		this.descripcion = descripcion;
-	}
 	boolean isVisto() {
 		return visto;
 	}
-	void setVisto(boolean visto) {
+	void setVisto(boolean visto, int calificacion) {
 		this.visto = visto;
+		this.setCalificacion(calificacion);
 	}
 	int getCalificacion() {
 		return calificacion;
